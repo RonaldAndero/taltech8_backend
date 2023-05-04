@@ -4,6 +4,7 @@ import productsController from "./controllers/products";
 import productlistController from "./controllers/productlist";
 import parcelmachinesController from "./controllers/parcelmachines";
 import npsPriceController from "./controllers/npsPrice";
+import paymentController from "./controllers/payment";
 import cors from "cors";
 import bodyParser from "body-parser";
 
@@ -28,6 +29,7 @@ app.use('/', productsController);
 app.use('/', productlistController);
 app.use('/', parcelmachinesController)
 app.use('/', npsPriceController)
+app.use('/', paymentController)
 
 app.listen(3000,() => {
     console.log(`[server]: Server is running at http://localhost:3000`);
